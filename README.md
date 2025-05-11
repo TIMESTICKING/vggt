@@ -24,6 +24,16 @@
 }
 ```
 
+## What does this repo do?
+
+- Currently, it generates `transforms.json` and point clouds (with color) in `ply` in NeRFStudio format. Refer to file `generate_nerfstudio_format.ipynb`. I **didn't write a perfect functioning code**, you should probably change the image path in `transforms.json`; and if you intend to use the point clouds in NeRFStudio, you should add `"ply_file_path": "sparse_pc.ply",` at the top level of the `json` file.
+
+
+---
+
+Content below are as the same as the VGGT repo.
+
+
 ## Updates
 - [Apr 13, 2025] Training code is being gradually cleaned and uploaded to the [training](https://github.com/facebookresearch/vggt/tree/training) branch. It will be merged into the main branch once finalized.
 

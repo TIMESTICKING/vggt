@@ -1,5 +1,7 @@
 .hydra/
+people/
 output/
+nerfstudio_format_output/
 ckpt/
 dependency/
 # Byte-compiled / optimized / DLL files
