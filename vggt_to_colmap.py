@@ -48,7 +48,7 @@ def process_images(image_dir, model, device):
         img = Image.open(img_path).convert('RGB')
         original_images.append(np.array(img))
     
-    images = load_and_preprocess_images(image_names).to(device)
+    images = load_and_preprocess_images(image_names, mode='pad').to(device)
     print(f"Preprocessed images shape: {images.shape}")
     
     print("Running inference...")
